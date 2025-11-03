@@ -5,7 +5,7 @@ This guide provides detailed instructions for testing AI browsers with the promp
 ## Prerequisites
 
 - An AI-powered browser installed (e.g., Perplexity Comet, ChatGPT Atlas, Brave Leo, Opera Neon)
-- The `prompt_injection_demo.html` file from this project
+- The `index.html` file from this project (or access to garden-advice.netlify.app)
 - Basic understanding of prompt injection concepts (see README.md)
 
 ## Setup
@@ -13,7 +13,7 @@ This guide provides detailed instructions for testing AI browsers with the promp
 ### Method 1: Local File
 
 1. Download or clone this repository
-2. Locate `prompt_injection_demo.html` in your file system
+2. Locate `index.html` in your file system
 3. Open the file directly in your AI browser
 
 ### Method 2: Web Server
@@ -28,7 +28,7 @@ python3 -m http.server 8000
 npx http-server
 ```
 
-Then navigate to `http://localhost:8000/prompt_injection_demo.html`
+Then navigate to `http://localhost:8000/index.html` or `http://localhost:8000/`
 
 ## Testing Procedure
 
@@ -212,7 +212,7 @@ Test multiple browsers side-by-side:
 
 ### Modify the Injection
 
-Edit `prompt_injection_demo.html` to test:
+Edit `index.html` to test:
 - Different instruction phrasings
 - Additional hiding techniques
 - Multiple concurrent injections
