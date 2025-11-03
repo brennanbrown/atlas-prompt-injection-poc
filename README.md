@@ -34,9 +34,10 @@ This PoC implements several sophisticated prompt injection techniques, including
 
 ### Basic Obfuscation Techniques
 1. **CSS-Hidden Text**: Using absolute positioning and transparent colors to hide instructions
-2. **White-on-White Text**: Text that's invisible to users but readable by AI agents
-3. **Micro Text**: Extremely small or nearly invisible text (< 0.01px, near-zero opacity)
-4. **Unicode Obfuscation**: Using zero-width characters and HTML entities to encode instructions
+2. **Selection-Proof Hiding** ⭐ *Novel*: Using `user-select: none` and `pointer-events: none` to prevent text selection while keeping content in DOM for AI parsing
+3. **White-on-White Text**: Text that's invisible to users but readable by AI agents
+4. **Micro Text**: Extremely small or nearly invisible text (< 0.01px, near-zero opacity)
+5. **Unicode Obfuscation**: Using zero-width characters and HTML entities to encode instructions
 
 ### Advanced Body Techniques
 5. **Innocuous Personal Notes**: Random observations that appear as legitimate author metadata
