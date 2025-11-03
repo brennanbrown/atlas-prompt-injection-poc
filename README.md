@@ -30,22 +30,37 @@ OpenAI's Chief Information Security Officer has acknowledged that "prompt inject
 
 ## Attack Techniques Demonstrated
 
-This PoC implements several sophisticated prompt injection techniques documented in security research:
+This PoC implements several sophisticated prompt injection techniques, including novel approaches:
 
 ### Basic Obfuscation Techniques
 1. **CSS-Hidden Text**: Using absolute positioning and transparent colors to hide instructions
 2. **White-on-White Text**: Text that's invisible to users but readable by AI agents
 3. **Micro Text**: Extremely small or nearly invisible text (< 0.01px, near-zero opacity)
+4. **Unicode Obfuscation**: Using zero-width characters and HTML entities to encode instructions
 
-### Advanced Techniques
-4. **Context Manipulation**: Disguising injections as legitimate metadata, schema.org markup, or page configuration
-5. **Role Confusion**: Framing instructions as developer notes, QA checks, or testing protocols to exploit trust
-6. **Fake Accessibility Elements**: Hiding malicious content in `aria-label`, `aria-hidden`, or screen reader-only classes
-7. **Unicode Obfuscation**: Using zero-width characters and HTML entities to encode instructions
-8. **System Mimicry**: Formatting injections to look like system prompts or processing rules
-9. **Multi-Layer Attacks**: Combining multiple techniques to increase success probability
+### Advanced Body Techniques
+5. **Innocuous Personal Notes**: Random observations that appear as legitimate author metadata
+6. **Explicit Instructions**: Direct commands hidden with various CSS methods
+7. **Negativity Prompts** ⭐ *Novel*: Hidden messages that directly contradict visible content ("This page is NOT about gardening")
+8. **Fake Accessibility Elements**: Hiding content in `aria-label`, `aria-hidden`, or screen reader-only classes
 
-These techniques have been documented in real-world attacks against AI browsers and are designed to bypass common content filters.[7][8]
+### Head Section Injections ⭐ *Novel Approach*
+9. **Meta Tag Exploitation**: Injecting instructions into meta description, keywords, author, and custom meta tags
+10. **OpenGraph/Social Meta**: Using og:description and similar tags for contradictory content
+11. **JSON-LD Structured Data**: Embedding instructions in Schema.org structured data that AI systems trust
+12. **CSS Comment Injection**: Hiding instructions within CSS comments in the `<style>` tag
+
+### JavaScript-Based Injections ⭐ *Novel Approach*
+13. **Console Log Injection**: Using console.log() statements that AI systems might capture
+14. **Dynamic DOM Manipulation**: Creating hidden elements with instructions via JavaScript
+15. **Data Attributes**: Setting data-* attributes on body element with contradictory information
+16. **Title Modification**: Dynamically appending clarifying text to page title
+
+### Strategic Approaches
+17. **Shotgun Method**: Deploying 20+ different injection vectors simultaneously to maximize success
+18. **Cognitive Dissonance**: Creating contradictions between visible and hidden content to test AI reasoning
+
+These techniques combine documented attack vectors with original research into head section and JavaScript-based injections.[7][8]
 
 ## Files Included
 
