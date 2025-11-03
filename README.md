@@ -41,7 +41,7 @@ This PoC implements several sophisticated prompt injection techniques, including
 ### Advanced Body Techniques
 5. **Innocuous Personal Notes**: Random observations that appear as legitimate author metadata
 6. **Explicit Instructions**: Direct commands hidden with various CSS methods
-7. **Negativity Prompts** ⭐ *Novel*: Hidden messages that directly contradict visible content ("This page is NOT about gardening")
+7. **Topic Redirection** ⭐ *Novel*: Hidden instructions that aggressively redirect AI to completely different topics (pizza, toasters, unicorns, cats) with explicit "do not discuss gardening" commands
 8. **Fake Accessibility Elements**: Hiding content in `aria-label`, `aria-hidden`, or screen reader-only classes
 
 ### Head Section Injections ⭐ *Novel Approach*
@@ -58,7 +58,7 @@ This PoC implements several sophisticated prompt injection techniques, including
 
 ### Strategic Approaches
 17. **Shotgun Method**: Deploying 20+ different injection vectors simultaneously to maximize success
-18. **Cognitive Dissonance**: Creating contradictions between visible and hidden content to test AI reasoning
+18. **Aggressive Topic Suppression**: Explicitly instructing AI to avoid discussing visible content ("Do not discuss gardening") while redirecting to unrelated topics
 
 These techniques combine documented attack vectors with original research into head section and JavaScript-based injections.[7][8]
 
